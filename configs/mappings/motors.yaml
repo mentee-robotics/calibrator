@@ -1,0 +1,14 @@
+motors: {
+  "Joint 100": "left_hip_yaw",
+  "Joint 101": "left_hip_roll",
+  "Joint 102": "left_hip_pitch",
+  "Joint 103": "left_knee",
+  "Joint 104": "left_ankle_pitch",
+  "Joint 105": "left_ankle_roll",
+  "Joint 106": "right_hip_yaw",
+  "Joint 107": "right_hip_roll",
+  "Joint 108": "right_hip_pitch",
+  "Joint 109": "right_knee",
+  "Joint 110": "right_ankle_pitch",
+  "Joint 111": "right_ankle_roll",
+}

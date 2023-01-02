@@ -1,0 +1,12 @@
+defaults:
+  - robot_params: ["motors_params", "md80_params"]
+
+mapping: ${mappings.motors}
+
+global_motors_config:
+  step_timeout: 2
+  motor_class: "MD80MotorAbstractor"
+  enable_chunk: true
+#  motor_class: "RandomMotorAbstractor"
+  current_status_topic: "/md80/joint_states"
+

@@ -1,0 +1,4 @@
+defaults:
+  - mappings: ["motors"]
+  - hardware: ["motors_config"]
+  - _self_

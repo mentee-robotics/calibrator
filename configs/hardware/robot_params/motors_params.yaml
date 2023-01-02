@@ -1,0 +1,139 @@
+default_joint_angles_init: { #: default init position of dofs, not the same as default joint angles
+  "left_hip_yaw": 0.0,
+  "left_hip_roll": -0.148,
+  "left_hip_pitch": 0.0,
+  "left_knee": 0.0,
+  "left_ankle_pitch": 0.48,
+  "left_ankle_roll": 0.0,
+  "right_hip_yaw": 0.0,
+  "right_hip_roll": 0.148,
+  "right_hip_pitch": 0.0,
+  "right_knee": 0.0,
+  "right_ankle_pitch": -0.48,
+  "right_ankle_roll": 0.0,
+}
+
+calibration_gesture_params:
+  epsilon: 0.1
+  step_timeout: 1
+  position_epsilon: 0.1
+  delta_pos: 0.01
+
+
+
+default_joint_angles_tom: {
+  'left_hip_yaw': 0.,
+  'left_hip_roll':  -0.148, #-0.1533,
+  'left_hip_pitch': -0.0,
+  'left_knee': 0.0,
+  'left_ankle_pitch': 0.48,
+  'left_ankle_roll': 0.0,
+  'right_hip_yaw': 0.,
+  'right_hip_roll': 0.148, #0.1533,
+  'right_hip_pitch': 0.0,
+  'right_knee': -0.0,
+  'right_ankle_pitch': -0.48,
+  'right_ankle_roll': -0.0,
+}
+
+joints_params:
+  right_ankle_pitch:
+    name: "right_ankle_pitch"
+    min_position: -0.79
+    max_position: 0.79
+    limit_offset: 0.08 #0.03 #0.13
+    motor_type: 'AK80_64'
+    limit_direction: -1
+
+  right_knee:
+    name: "right_knee"
+    min_position: -0.87
+    max_position: 0.87
+    limit_offset: 0.20 #0.18
+    motor_type: 'AK80_64'
+    limit_direction: 1
+
+  right_hip_pitch:
+    name: "right_hip_pitch"
+    min_position: -0.9
+    max_position: 0.9
+    limit_offset: 0.15
+    motor_type: 'AK80_64'
+    limit_direction: -1
+
+  right_hip_roll:
+    name: "right_hip_roll"
+    min_position: -0.16
+    max_position: 0.16
+    limit_offset: 0.31
+    motor_type: 'AK70_10'
+    limit_direction: 1
+
+  right_hip_yaw:
+    name: "right_hip_yaw"
+    min_position: -0.19
+    max_position: 0.19
+    limit_offset: 0.302
+    motor_type: 'AK70_10'
+    limit_direction: 1
+
+  left_ankle_pitch:
+    name: "left_ankle_pitch"
+    min_position: -0.79
+    max_position: 0.79
+    limit_offset: 0.045 #0.08 #0.03 #0.052
+    motor_type: 'AK80_64'
+    limit_direction: 1
+
+  left_ankle_roll:
+      name: "left_ankle_roll"
+      min_position: -0.35
+      max_position: 0.35
+      limit_offset: 0.18 #0.205 #0.113
+      motor_type: 'AK80_9'
+      limit_direction: -1
+
+  right_ankle_roll:
+    name: "right_ankle_roll"
+    min_position: -0.35
+    max_position: 0.35
+    limit_offset: 0.14
+    motor_type: 'AK80_9'
+    limit_direction: 1
+
+
+  left_knee:
+    name: "left_knee"
+    min_position: -0.87
+    max_position: 0.87
+    limit_offset: 0.19
+    motor_type: 'AK80_64'
+    limit_direction: -1
+
+  left_hip_pitch:
+    name: "left_hip_pitch"
+    min_position: -0.9
+    max_position: 0.9
+    limit_offset: 0.106 #0.071
+    motor_type: 'AK80_64'
+    limit_direction: -1
+
+  left_hip_roll:
+    name: "left_hip_roll"
+    min_position: -0.16
+    max_position: 0.16
+    limit_offset: 0.33 #0.3
+    can_socket: 'can6'
+    motor_type: 'AK70_10'
+    limit_direction: -1
+
+  left_hip_yaw:
+      name: "left_hip_yaw"
+      min_position: -0.19
+      max_position: 0.19
+      limit_offset: 0.175
+      motor_type: 'AK70_10'
+      limit_direction: 1
+      
+      
+      

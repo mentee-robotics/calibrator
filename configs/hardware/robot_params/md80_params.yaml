@@ -1,0 +1,183 @@
+impedance_params:
+  left_ankle_pitch:
+    impedance_kd: 1.0
+    impedance_kp: 100.0
+    impedance_max_torque: 30.0
+  left_ankle_roll:
+    impedance_kd: 1.0
+    impedance_kp: 100.0
+    impedance_max_torque: 10.0
+  left_hip_pitch:
+    impedance_kd: 1.0
+    impedance_kp: 100.0
+    impedance_max_torque: 40.0
+  left_hip_roll:
+    impedance_kd: 1.0
+    impedance_kp: 100.0
+    impedance_max_torque: 30.0
+  left_hip_yaw:
+    impedance_kd: 1.0
+    impedance_kp: 100.0
+    impedance_max_torque: 20.0
+  left_knee:
+    impedance_kd: 1.0
+    impedance_kp: 100.0
+    impedance_max_torque: 40.0
+  right_ankle_pitch:
+    impedance_kd: 1.0
+    impedance_kp: 100.0
+    impedance_max_torque: 30.0
+  right_ankle_roll:
+    impedance_kd: 1.0
+    impedance_kp: 100.0
+    impedance_max_torque: 10.0
+  right_hip_pitch:
+    impedance_kd: 1.0
+    impedance_kp: 100.0
+    impedance_max_torque: 40.0
+  right_hip_roll:
+    impedance_kd: 1.0
+    impedance_kp: 100.0
+    impedance_max_torque: 30.0
+  right_hip_yaw:
+    impedance_kd: 1.0
+    impedance_kp: 100.0
+    impedance_max_torque: 20.0
+  right_knee:
+    impedance_kd: 1.0
+    impedance_kp: 100.0
+    impedance_max_torque: 40.0
+
+position_pid_params:
+  left_ankle_pitch:
+    pos_iwu:  30.0
+    pos_kd: 2.0
+    pos_ki: 2.2
+    pos_kp:  100.0
+    pos_max_op: 50.0
+    vel_iwu: 30.5
+    vel_kd: 2.0
+    vel_ki: 2.1
+    vel_kp: 100
+    vel_max_op: 50
+  left_ankle_roll:
+    pos_iwu:  30.0
+    pos_kd: 2.0
+    pos_ki: 2.2
+    pos_kp:  100.0
+    pos_max_op: 50.0
+    vel_iwu: 30.5
+    vel_kd: 2.0
+    vel_ki: 2.1
+    vel_kp: 100
+    vel_max_op: 50
+  left_hip_pitch:
+    pos_iwu:  30.0
+    pos_kd: 2.0
+    pos_ki: 2.2
+    pos_kp:  100.0
+    pos_max_op: 50.0
+    vel_iwu: 30.5
+    vel_kd: 2.0
+    vel_ki: 2.1
+    vel_kp: 100
+    vel_max_op: 50
+  left_hip_roll:
+    pos_iwu:  30.0
+    pos_kd: 2.0
+    pos_ki: 2.2
+    pos_kp:  100.0
+    pos_max_op: 50.0
+    vel_iwu: 30.5
+    vel_kd: 2.0
+    vel_ki: 2.1
+    vel_kp: 100
+    vel_max_op: 50
+  left_hip_yaw:
+    pos_iwu:  30.0
+    pos_kd: 2.0
+    pos_ki: 2.2
+    pos_kp:  100.0
+    pos_max_op: 50.0
+    vel_iwu: 30.5
+    vel_kd: 2.0
+    vel_ki: 2.1
+    vel_kp: 100
+    vel_max_op: 50
+  left_knee:
+    pos_iwu:  30.0
+    pos_kd: 2.0
+    pos_ki: 2.2
+    pos_kp:  80.0
+    pos_max_op: 50.0
+    vel_iwu: 30.5
+    vel_kd: 2.0
+    vel_ki: 2.1
+    vel_kp: 80
+    vel_max_op: 50
+  right_ankle_pitch:
+    pos_iwu:  30.0
+    pos_kd: 2.0
+    pos_ki: 2.2
+    pos_kp:  100.0
+    pos_max_op: 50.0
+    vel_iwu: 30.5
+    vel_kd: 2.0
+    vel_ki: 2.1
+    vel_kp: 100
+    vel_max_op: 50
+  right_ankle_roll:
+    pos_iwu:  30.0
+    pos_kd: 2.0
+    pos_ki: 2.2
+    pos_kp: 70
+    pos_max_op: 50.0
+    vel_iwu: 30.5
+    vel_kd: 2.0
+    vel_ki: 2.1
+    vel_kp: 100
+    vel_max_op: 50
+  right_hip_pitch:
+    pos_iwu:  30.0
+    pos_kd: 2.0
+    pos_ki: 2.2
+    pos_kp:  100.0
+    pos_max_op: 50.0
+    vel_iwu: 30.5
+    vel_kd: 2.0
+    vel_ki: 2.1
+    vel_kp: 100
+    vel_max_op: 50
+  right_hip_roll:
+    pos_iwu:  30.0
+    pos_kd: 2.0
+    pos_ki: 2.2
+    pos_kp:  100.0
+    pos_max_op: 50.0
+    vel_iwu: 30.5
+    vel_kd: 2.0
+    vel_ki: 2.1
+    vel_kp: 100
+    vel_max_op: 50
+  right_hip_yaw:
+    pos_iwu:  30.0
+    pos_kd: 2.0
+    pos_ki: 2.2
+    pos_kp:  100.0
+    pos_max_op: 50.0
+    vel_iwu: 30.5
+    vel_kd: 2.0
+    vel_ki: 2.1
+    vel_kp: 100
+    vel_max_op: 50
+  right_knee:
+    pos_iwu:  30.0
+    pos_kd: 2.0
+    pos_ki: 2.2
+    pos_kp:  100.0
+    pos_max_op: 50.0
+    vel_iwu: 30.5
+    vel_kd: 2.0
+    vel_ki: 2.1
+    vel_kp: 100
+    vel_max_op: 50
