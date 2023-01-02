@@ -40,21 +40,14 @@ class Motor:
 
     def publish_enable_cmd(self):
         self.candle.controlMd80Enable(self.motor_id, True)
-        self.candle.controlMd80Enable(self.motor_id, True)
+       #  self.candle.controlMd80Enable(self.motor_id, True)
 
     def publish_disabled_cmd(self):
         self.candle.controlMd80Enable(self.motor_id, False)
 
     def publish_zero_cmd(self):
         self.candle.controlMd80SetEncoderZero(self.motor_id)  
-    
-    def stay_in_pos(self):
-        self.update_motor_actual_metadata()
-        time.sleep(0.01)
-        while self.locked:
-            self.candle.md80s[self.index].setTargetPosition(self.actual_data.actual_position)
-            time.sleep(0.1)
-    
+                                               
     def move_motor(self):
         t = 0.0
         dt = 0.2
@@ -65,7 +58,7 @@ class Motor:
             time.sleep(0.01)  # Add some delay
     
     def set_pid_mode(self):
-        self.candle.controlMd80Mode(self.motor_id, pyCandle.POSITION_PID)     # Set mode to impedance control
+        self.candle.controlMd80Mode(self.motor_id, pyCandle.POSITION_PID)     # Set mode to position control
         print(self.index)
         self.candle.md80s[self.index].setPositionControllerParams(100.0, 2.2, 0, 30.0)
         self.candle.md80s[self.index].setVelocityControllerParams(100.0, 2.1, 0, 50)

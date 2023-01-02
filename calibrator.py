@@ -39,6 +39,7 @@ class Calibrator:
                 print(f"result of calibyration ")
             else:
                 print(f"Not calibrating {motors_to_calibrate}. Moving on")
+                
             
             
     def calibrate(self, motor):
@@ -51,13 +52,14 @@ class Calibrator:
         motor.publish_enable_cmd()
         time.sleep(0.1)
         self.candle.begin()
-        for motor in self.motors_by_name:
-            motor.stay_in
+        # for motor in self.motors_by_name:
+        #     motor.locked = True
+        #     motor.stay_in_pos()
         lowest_pos = motor.go_to_limit()
         time.sleep(0.1)
         motor.go_to_zero(lowest_pos)
         time.sleep(5)
-        # motor.update_mode(ControlMode.IMPEDANCE.name)
+
         self.candle.end()
         motor.publish_zero_cmd()
         print(f"Calibrator - Done with Calibrating {motor.name}")
